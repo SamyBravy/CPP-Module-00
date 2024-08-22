@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 13:18:54 by marvin            #+#    #+#             */
-/*   Updated: 2024/08/19 13:18:54 by marvin           ###   ########.fr       */
+/*   Created: 2024/08/23 00:32:56 by marvin            #+#    #+#             */
+/*   Updated: 2024/08/23 00:32:56 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <cstring>
+#include "Account.hpp"
 
-int main(int argc, char **argv)
+int	Account::getNbAccounts(void)
 {
-    if (argc == 1)
-    {
-        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
-        return 0;
-    }
+	return _nbAccounts;
+}
 
-    for (int i = 1; i < argc; i++)
-    {
-        for (int j = 0; j < strlen(argv[i]); j++)
-            std::cout << (char)toupper(argv[i][j]);
-    }
-    std::cout << std::endl;
-    return 0;
+int	Account::getTotalAmount(void)
+{
+	return _totalAmount;
+}
+
+int	Account::getNbDeposits(void)
+{
+	return _nbDeposits;
+}
+
+int	Account::getNbWithdrawals(void)
+{
+	return _nbWithdrawals;
 }

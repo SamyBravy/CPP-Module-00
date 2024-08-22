@@ -12,7 +12,7 @@
 
 NAME = 
 MY_LIB = ./my_lib
-SRC = 
+SRC = tests.cpp Account.cpp
 FLAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
 

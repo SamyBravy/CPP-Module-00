@@ -12,7 +12,7 @@
 
 NAME = phonebook
 MY_LIB = ./my_lib
-SRC = 
+SRC = main.cpp Contact.cpp PhoneBook.cpp
 FLAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
 
