@@ -25,8 +25,8 @@ class PhoneBook
 		PhoneBook();
 		~PhoneBook();
 		void	addContact(Contact contact);
-		Contact	getContact(int index);
-		int		getContactCount();
+		Contact	getContact(int index) const;
+		int		getContactCount() const;
 };
 
 #endif

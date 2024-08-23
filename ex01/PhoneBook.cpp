@@ -30,7 +30,7 @@ void	PhoneBook::addContact(Contact contact)
 		contacts[7] = contact;
 }
 
-Contact	PhoneBook::getContact(int index)
+Contact	PhoneBook::getContact(int index) const
 {
 	if (index >= 0 && index < contactCount)
 		return contacts[index];
@@ -38,7 +38,7 @@ Contact	PhoneBook::getContact(int index)
 		return Contact();
 }
 
-int	PhoneBook::getContactCount()
+int	PhoneBook::getContactCount() const
 {
 	return contactCount;
 }

@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = 
+NAME = account
 MY_LIB = ./my_lib
 SRC = tests.cpp Account.cpp
 FLAGS = -Wall -Wextra -Werror -std=c++98
