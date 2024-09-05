@@ -15,19 +15,17 @@
 PhoneBook::PhoneBook()
 {
 	contactCount = 0;
+	contactIndex = 0;
 }
 
 PhoneBook::~PhoneBook() { }
 
 void	PhoneBook::addContact(Contact contact)
 {
+	contacts[contactIndex % 8] = contact;
+	contactIndex++;
 	if (contactCount < 8)
-	{
-		contacts[contactCount] = contact;
 		contactCount++;
-	}
-	else
-		contacts[7] = contact;
 }
 
 Contact	PhoneBook::getContact(int index) const
